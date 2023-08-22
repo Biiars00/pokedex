@@ -1,0 +1,196 @@
+/* Tipos de Pokémons - cores */
+.normal {
+    background-color: #e8de92;
+} 
+.fire {
+    background-color: #ffb238;
+}
+.water {
+    background-color: #88d3ab;
+}
+.grass {
+    background-color: #8dff76;
+} 
+.electric {
+    background-color: #f7e112;
+} 
+.ice {
+    background-color: #49fecf;
+} 
+.ground {
+    background-color: #fbdcb0;
+} 
+.flying {
+    background-color: #907071;
+} 
+.poison {
+    background-color: #ac1f7f;
+} 
+.fighting {
+    background-color: #e24949;
+} 
+.psychic {
+    background-color: #fd2295;
+} 
+.dark {
+    background-color: #a2825c;
+} 
+.rock {
+    background-color: #cacf7f;
+} 
+.bug {
+    background-color: #c6e152;
+} 
+.ghost {
+    background-color: #9b45ae;
+} 
+.steel {
+    background-color: #daafe5;
+} 
+.dragon {
+    background-color: #a301b8;
+} 
+.fairy {
+    background-color: #ffa5e4;
+} 
+
+/* Estilização do conteúdo */
+
+#pokemons 
+.lists {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+    border-radius: 1rem;
+}
+
+.list 
+.number {
+    color: #2589bb;
+    text-align: right;
+    opacity: .5;
+}
+
+.list 
+.name {
+    margin-bottom: 0;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.list 
+.detail {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.list 
+.detail 
+.types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+.list 
+.detail 
+.types 
+.type {
+    /* background-color: var(--terciary-color); */
+    color: var(--primary-color);
+    padding: .5rem;
+    border-radius: .25rem .5rem;
+    font-size: .825rem;
+    margin: .25rem 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.list 
+.detail 
+.image {
+    max-width: 70%;
+    height: 100px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination
+.load {
+    background-color: #f7e112;
+    border: none;
+    border-radius: 3rem;
+    color: #0b4462;
+    padding: 1rem; 
+}
+
+.baseFooter 
+.baseboardFooter {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.linkFooter {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Lists */
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .content {
+        max-width: 576px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .content {
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .lists {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .lists {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

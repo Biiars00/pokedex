@@ -1,0 +1,34 @@
+:root {
+    --body-color: #0b4462;
+    --title-color: #f7e112;
+    --primary-color: #0b4462;
+    --secundary-color: #abee93;
+    --terciary-color: #a7f27e;
+    --body-fonts: 'Roboto', sans-serif;
+}
+
+* {
+    font-family: var(--body-fonts);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   background-color: var(--body-color);
+}
+
+.content {
+    padding: 1rem;
+    height: 100vh;
+    width: 100%;
+}
+
+.content h1 {
+    color: var(--title-color);
+    text-shadow: 
+        -1px -1px 2px #0a90a1, 
+        -1px 1px 6px #0a90a1,                    
+        1px -1px 2px #0a90a1,                  
+        1px 0px 5px #0a90a1;
+}
